@@ -1,0 +1,2 @@
+vhdl isim_temp "project2.vhd"
+vhdl isim_temp "project2_tb.vhd"

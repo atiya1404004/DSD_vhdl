@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "E:/project2/ALU.xst" -ofn "E:/project2/ALU.syr" 
+xst -intstyle ise -ifn "E:/project2/ALU.xst" -ofn "E:/project2/ALU.syr" 
+xst -intstyle ise -ifn "E:/project2/ALU.xst" -ofn "E:/project2/ALU.syr" 
+xst -intstyle ise -ifn "E:/project2/ALU.xst" -ofn "E:/project2/ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 ALU.ngc ALU.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ALU_map.ncd ALU.ngd ALU.pcf 
+par -w -intstyle ise -ol high -t 1 ALU_map.ncd ALU.ncd ALU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf 
+xst -intstyle ise -ifn "E:/project2/ALU.xst" -ofn "E:/project2/ALU.syr" 
